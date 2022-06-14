@@ -1,9 +1,8 @@
 @import "/src/scss/base/colors";
 @import "/src/scss/base/text";
+@import "/src/scss/base/animations";
 
 .logo-cont {
-    width: 8rem;
-    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,25 +26,12 @@
     }
 }
 
-
-@keyframes primary-anim {
-    0%   {
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-    }
-    100%  {
-
-        margin-left: .6rem;
-        margin-top: 0.7rem;
-    }
-}
-@keyframes secundary-anim {
-    0%   {
-        margin-left: -.4rem;
-        margin-top: -.1rem;
-    }
-    100%  {
-        margin-left: 0;
-        margin-top: 0;
+.header-logo {
+    width: 8rem;
+    height: 6rem;
+    @media screen and (max-width: 600px) {
+        div {
+            font-size: 2.5rem;
+        }
     }
 }

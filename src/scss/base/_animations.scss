@@ -1,0 +1,42 @@
+@keyframes primary-anim {
+    0%   {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    100%  {
+
+        margin-left: .6rem;
+        margin-top: 0.7rem;
+    }
+}
+
+@keyframes secundary-anim {
+    0%   {
+        margin-left: -.4rem;
+        margin-top: -.1rem;
+    }
+    100%  {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@keyframes arrow-mobile-anim {
+    0%   {
+        margin-left: -2.6rem;
+    }
+    100%  {
+        margin-left: -2.5;
+    }
+}
+
+@keyframes show-mobile-anim {
+    0%   {
+        opacity: 0;
+        margin-left: -5rem;
+    }
+    100%  {
+        opacity: 1;
+        margin-left: 0;
+    }
+}

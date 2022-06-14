@@ -1,12 +1,18 @@
 @import "/src/scss/base/colors";
+@import "/src/scss/base/animations";
+@import "/src/scss/base/text";
+
 .header {
     background-color: $grey-1;
     height: 100%;
     width: 130px;
     left: 0;
     top: 0;
+    align-items: center;
+    display: flex;
     ul {
         margin: 0;
+        margin-top: -5rem;
         padding: 0;
         color: $white;
         list-style: none;
@@ -19,7 +25,7 @@
             align-items: flex-end;
             display: block;
             justify-content: center;
-            font-family: 'Gugi';
+            font-family: $font-2;
             cursor: pointer;
             img.icon, .icon-blue {
                 width: 2rem;
@@ -31,7 +37,7 @@
                 color: red;
                 margin-bottom: 1.2rem;
                 margin-top: .5rem;
-                font-family: 'Press Start 2P';
+                font-family: $font-1;
             }
             .icon-blue {
                 display: none;
@@ -57,7 +63,43 @@
                 }
             }
         }
+        li.btn-menu {
+            display: none;
+        }
     }
 
-    @media screen and (max-width: 600px) {}
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: 6rem;
+        align-items: baseline;
+        display: block;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+            li.item {
+                display: none;
+            }
+            li.btn-menu {
+                padding: 1.3rem;
+                display: block;
+                button {
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1.5rem;
+                    font-family: $font-1;
+                    background-color: transparent;
+                    color: $primary;
+                    border: none;
+                    &.btn-menu-close {
+                        position: absolute;
+                        color: red;
+                        z-index: 1;
+                        right: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
 }

@@ -1,0 +1,17 @@
+<div class="mobile-menu" [ngClass]="{'open-menu': menuStatus, 'close-menu': !menuStatus}">
+    <div class="stripes stripes-left"></div>
+    <div class="stripes stripes-right"></div>
+    <div class="mobile-menu-options" [ngClass]="{'show-menu-open': menuStatus}">
+        <ul>
+            <li class="item" routerLink="/about-me" routerLinkActive="active" (click)="closeMenu()">
+                <span class="icon-active-mobile"> > </span>About me
+            </li>
+            <li class="item" routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">
+                <span class="icon-active-mobile"> > </span> Projects
+            </li>
+            <li class="item" routerLink="/contact-me" routerLinkActive="active" (click)="closeMenu()">
+                <span class="icon-active-mobile"> > </span>Contact me
+            </li>
+        </ul>
+    </div>
+</div>

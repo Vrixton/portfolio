@@ -1,0 +1,95 @@
+@import "/src/scss/base/colors";
+@import "/src/scss/base/animations";
+@import "/src/scss/base/text";
+
+.mobile-menu {
+    .mobile-menu-options {
+        opacity: 0;  
+        ul {
+            display: none;
+        } 
+    }
+    .stripes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: 1s; 
+    }
+    .stripes-left {
+        margin-left: -101%;
+        background: repeating-linear-gradient(
+            to bottom,
+            $grey-1,
+            $grey-1 20px,
+            transparent 20px,
+            transparent 40px
+        );
+    }
+    .stripes-right {
+        margin-left: 101%;
+        width: 0;
+        background: repeating-linear-gradient(
+            to bottom,
+            transparent,
+            transparent 20px,
+            $grey-1 20px,
+            $grey-1 40px
+        );
+    }
+    &.open-menu {
+        .stripes-left {
+            margin-left: 0;
+        }
+        .stripes-right {
+            margin-left: 0;
+            width: 100%;
+        }
+        .mobile-menu-options {
+            position: absolute;
+            z-index: 1;
+            opacity: 1;  
+            margin-top: 5rem;
+            ul {
+                padding: 0;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 100%;
+                    color: $grey-3;
+                    font-size: 2rem;
+                    margin-bottom: 5rem;
+                    position: relative;
+                    span {
+                        display: none;
+                        position: absolute;
+                    }
+                    &:hover, &.active {
+                        color: $primary;
+                    }
+                    &.active span {
+                        display: initial;
+                        color: $secundary;
+                        font-family: $font-1;
+                        font-size: 1rem;
+                        margin-left: -2rem;
+                        margin-top: .8rem;
+                        animation-name: arrow-mobile-anim;
+                        animation-duration: .4s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+.show-menu-open {
+    animation-name: show-mobile-anim;
+    animation-duration: 1s;
+    ul {
+        display: initial;
+    } 
+}

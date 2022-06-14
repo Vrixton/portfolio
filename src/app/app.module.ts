@@ -7,6 +7,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './utils/header/header.component';
 import { LogoComponent } from './utils/logo/logo.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MobileMenuComponent } from './utils/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeComponent } from './pages/home/home.component';
     DashboardComponent,
     HeaderComponent,
     LogoComponent,
-    HomeComponent
+    HomeComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

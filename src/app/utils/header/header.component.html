@@ -1,7 +1,7 @@
 <div class="header">
     <ul>
         <li class="logo" routerLink="">
-            <app-logo></app-logo>
+            <app-logo [position]="'header-logo'"></app-logo>
         </li>
         <li class="item" routerLink="/about-me" routerLinkActive="active">
             <span class="icon-active">X</span>
@@ -21,5 +21,12 @@
             <img class="icon-blue" src="../../../assets/icons/contactme-blue.webp">
             Contact me
         </li>
+        <li class="btn-menu">
+            <button [ngClass]="{'btn-menu-close': menuStatus, 'btn-menu-open': !menuStatus}">
+                <span *ngIf="!menuStatus" (click)="menuMobile(true)">Ξ</span>    
+                <span *ngIf="menuStatus" (click)="menuMobile(false)">X</span> 
+            </button>
+        </li>
     </ul>
 </div>
+<app-mobile-menu [menuStatus]="menuStatus" (closeMenuStatus)="menuMobile(false)"></app-mobile-menu>

@@ -6,6 +6,9 @@
     top: 0;
     left: 0;
     display: flex;
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
 }
 .cont-router-outlet {
     background-color: $background;

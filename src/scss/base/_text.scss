@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Press Start 2P');
 @import url('https://fonts.googleapis.com/css?family=Gugi');
  
+
+$font-1: 'Press Start 2P';
+$font-2: 'Gugi';
+
 .font-1 {
-    font-family: 'Press Start 2P' !important;
+    font-family: $font-1 !important;
 }
 
 .font-2 {
-    font-family: 'Gugi' !important;
+    font-family: $font-2 !important;
 }
