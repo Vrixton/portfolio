@@ -1,0 +1,51 @@
+@import "/src/scss/base/colors";
+@import "/src/scss/base/text";
+
+.logo-cont {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        position: absolute;
+        font-size: 3rem;
+        transform: rotate(-20deg);
+        cursor: pointer;
+    }
+    div.primary-text {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        animation-name: primary-anim;
+        animation-duration: .2s;
+        animation-iteration-count: infinite;
+    }
+    div.secundary-text {
+        animation-name: secundary-anim;
+        animation-duration: .2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+
+@keyframes primary-anim {
+    0%   {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    100%  {
+
+        margin-left: .6rem;
+        margin-top: 0.7rem;
+    }
+}
+@keyframes secundary-anim {
+    0%   {
+        margin-left: -.4rem;
+        margin-top: -.1rem;
+    }
+    100%  {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
