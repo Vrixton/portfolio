@@ -13,12 +13,9 @@ export class HeaderComponent implements OnInit {
   }
 
   menuMobile(status) {
-    console.log("status es -> ", status);
     if(status) {
-        console.log("se abre");
         this.menuStatus = true;
     } else {
-      console.log("se cierra");
       this.menuStatus = false;
     }
   }
