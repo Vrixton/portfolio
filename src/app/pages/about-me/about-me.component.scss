@@ -1,0 +1,16 @@
+@import "/src/scss/base/colors";
+
+.cont-about {
+    background-color: $background;
+    background-image: url("../../../assets/icons/bg-home.png");
+    position: absolute;
+    width: calc(100% - 8rem);
+    height: 100%;
+    overflow: auto;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: calc(100% - 6rem);
+        background-size: 8rem;
+    }
+}

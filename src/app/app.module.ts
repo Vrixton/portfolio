@@ -8,6 +8,8 @@ import { HeaderComponent } from './utils/header/header.component';
 import { LogoComponent } from './utils/logo/logo.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MobileMenuComponent } from './utils/mobile-menu/mobile-menu.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { HeaderAboutComponent } from './utils/header-about/header-about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MobileMenuComponent } from './utils/mobile-menu/mobile-menu.component';
     HeaderComponent,
     LogoComponent,
     HomeComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    AboutMeComponent,
+    HeaderAboutComponent
   ],
   imports: [
     BrowserModule,
