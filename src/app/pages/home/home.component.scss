@@ -1,0 +1,65 @@
+@import "/src/scss/base/colors";
+@import "/src/scss/base/text";
+.cont-home {
+    background-color: $background;
+    background-image: url("../../../assets/icons/bg-home.png");
+    position: absolute;
+    width: calc(100% - 8rem);
+    height: 100%;
+    .cont-home-logo {
+        margin-top: 15rem;
+    }
+    .home-name {
+        text-align: center;
+        color: $white;
+        font-weight: lighter;
+        p {
+            font-size: .8rem;
+        }
+    }
+    .cont-home-projects {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        bottom: 0;
+        div {
+            width: 23%;
+            height: 6rem;
+            margin: .5rem;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        div:last-child {
+            width: 30%;
+            color: $white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+            span {
+                margin-left: .5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: calc(100% - 6rem);
+        background-size: 8rem;
+        .cont-home-logo {
+            margin-top: 7rem;
+        }
+        .cont-home-projects { 
+            div {
+                height: 4rem;
+            }
+            div.bg-third {
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-height: 600px) {
+        .cont-home-projects {
+            position: initial;
+        }
+    }
+}

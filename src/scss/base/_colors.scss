@@ -1,6 +1,7 @@
 $primary: #36d1dd;
 $secundary: #d73fe8;
 $third: #38e038;
+$accent: red;
 $grey-1: #2d2d2d;
 $grey-2: #3d3d3d;
 $grey-3: #7a7a7a;
@@ -13,4 +14,19 @@ $background: #1b232b;
 }
 .secundary-text {
     color: $secundary;
+}
+.bg-primary {
+    background-color: $primary;
+}
+.bg-secundary {
+    background-color: $secundary;
+}
+.bg-third {
+    background-color: $third;
+}
+.bg-grey-1 {
+    background-color: $grey-1;
+}
+.bg-grey-2 {
+    background-color: $grey-2;
 }
