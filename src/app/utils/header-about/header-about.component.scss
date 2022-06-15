@@ -3,37 +3,23 @@
 
 .cont-header-about {
  padding: 1rem;
- display: flex;
+ display: block;
  justify-content: center;
  background-color: $grey-3;
  flex-wrap: wrap;
  .about-description {
+    margin: 0 auto;
     width: 46rem;
     text-align: center;
     color: $white;
     font-weight: lighter;
+    margin-bottom: 2rem;
     p {
         line-height: 1.5;
     }
- }
- .about-links {
-    margin-top: 1rem;
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: space-between;
-    .networks {
-        display: flex;
-        justify-content: start;
-        div.network {
-            cursor: pointer;
-            width: 4rem;
-            margin-right: .7rem;
-        }
-    }
-    .cv { 
-        cursor: pointer;
-        width: 4rem;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
     }
  }
 }

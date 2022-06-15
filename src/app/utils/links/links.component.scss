@@ -1,0 +1,21 @@
+@import "/src/scss/base/colors";
+.about-links {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    .networks {
+        display: flex;
+        justify-content: start;
+        div.network {
+            cursor: pointer;
+            width: 4rem;
+            margin-right: .7rem;
+        }
+    }
+    .cv { 
+        cursor: pointer;
+        width: 4rem;
+    }
+ }

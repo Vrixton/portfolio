@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MobileMenuComponent } from './utils/mobile-menu/mobile-menu.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HeaderAboutComponent } from './utils/header-about/header-about.component';
+import { PokemonTeamComponent } from './utils/pokemon-team/pokemon-team.component';
+import { LinksComponent } from './utils/links/links.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderAboutComponent } from './utils/header-about/header-about.componen
     HomeComponent,
     MobileMenuComponent,
     AboutMeComponent,
-    HeaderAboutComponent
+    HeaderAboutComponent,
+    PokemonTeamComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
