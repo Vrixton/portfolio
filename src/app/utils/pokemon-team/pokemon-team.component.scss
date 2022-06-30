@@ -1,0 +1,27 @@
+@import "/src/scss/base/colors";
+@import "/src/scss/base/text";
+
+.pokemon-team-cont {
+    .seccion-title {
+        background-color: $grey-1;
+        padding: 1rem 2rem;
+        h1 {
+            margin: 0;
+            color: $white;
+            font-weight: lighter;
+            font-size: 1.6rem;
+        }
+    }
+    .cont-pokedex {
+        height: 20rem;
+        background: repeating-linear-gradient(
+            45deg,
+            $white,
+            $white 10px,
+            $grey-4 10px,
+            $grey-4 20px
+          );
+    }
+}
+
+

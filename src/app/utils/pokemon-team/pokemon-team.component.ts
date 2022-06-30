@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pokemon-team.component.scss']
 })
 export class PokemonTeamComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

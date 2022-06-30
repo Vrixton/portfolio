@@ -24,7 +24,7 @@ import { LinksComponent } from './utils/links/links.component';
     AboutMeComponent,
     HeaderAboutComponent,
     PokemonTeamComponent,
-    LinksComponent
+    LinksComponent,
   ],
   imports: [
     BrowserModule,
