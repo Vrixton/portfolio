@@ -21,6 +21,87 @@
             $grey-4 10px,
             $grey-4 20px
           );
+          .cont-carousel {
+            padding: 2rem;
+            .carousel-cell {
+                .carousel-pokemon {
+                    background-color: $grey-1;
+                    h1 {
+                        font-size: 5rem;
+                        color: $grey-3;
+                        position: absolute;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                    .cont-pokemon {
+                        display: flex;
+                        img {
+                            margin-top: 3rem;
+                            margin-left: .8rem;
+                            width: 13rem;
+                            cursor: pointer;
+                        }
+                        div.pokemon-data {
+                            margin-top: 5rem;
+                            height: 8rem;
+                            margin-left: -1rem;
+                            p {
+                                color: white;
+                                font-size: 1.3rem;
+                                font-family: $font-2;
+                                margin-bottom: 0;
+                                text-transform: uppercase;
+                            }
+                            div.types {
+                                display: flex;
+                                margin: 0;
+                                width: 3rem;
+                                p.type {
+                                    color: $white;
+                                    font-size: .5rem;
+                                    border-radius: 1rem;
+                                    padding: .1rem .5rem;
+                                    border: .1rem solid $white;
+                                    cursor: pointer;
+                                    margin-right: .5rem;
+                                    font-family: $font-2;
+                                    text-transform: uppercase;
+                                }
+                                .type-poison {
+                                    background-color: #ab62c3;
+                                }
+                                .type-electric {
+                                    background-color: #f2bf30;
+                                }
+                                .type-steel {
+                                    background-color: #8d8d96;
+                                }
+                                .type-fighting {
+                                    background-color: #5f2312;
+                                }
+                                .type-flying {
+                                    background-color: #9caaf2;
+                                }
+                                .type-water {
+                                    background-color: #1771d0;
+                                }
+                                .type-normal {
+                                    background-color: #c7c2ba;
+                                }
+                                .type-ghost {
+                                    background-color: #7370b7;
+                                }
+                                .type-fairy {
+                                    background-color: #f0a9ef;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        
     }
 }
 

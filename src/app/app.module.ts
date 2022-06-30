@@ -12,6 +12,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HeaderAboutComponent } from './utils/header-about/header-about.component';
 import { PokemonTeamComponent } from './utils/pokemon-team/pokemon-team.component';
 import { LinksComponent } from './utils/links/links.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LinksComponent } from './utils/links/links.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
