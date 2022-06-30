@@ -29,10 +29,10 @@ export class PokemonTeamComponent implements OnInit {
       hide: false
     },
     {
-      name: 'Primarina',
-      number: '730',
-      sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png',
-      types: ['water', 'fairy'],
+      name: 'Decidueye',
+      number: '724',
+      sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png',
+      types: ['grass', 'ghost'],
       hide: true
     },
     {
@@ -55,6 +55,20 @@ export class PokemonTeamComponent implements OnInit {
       sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png',
       types: ['flying', 'fairy'],
       hide: false
+    },
+    {
+      name: 'Goodra',
+      number: '706',
+      sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png',
+      types: ['dragon'],
+      hide: false
+    },
+    {
+      name: 'Primarina',
+      number: '730',
+      sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png',
+      types: ['water', 'fairy'],
+      hide: true
     },
   ]
   constructor() { }

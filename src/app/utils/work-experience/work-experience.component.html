@@ -1,0 +1,12 @@
+<div class="we-cont">
+    <div class="seccion-title">
+        <h1 class="font-2 ">WORK EXPERIENCE</h1>
+    </div>
+    <div class="cont-we">
+        <div *ngFor="let work of workExperience" class="work {{ work.color }}"> 
+            <h1 *ngIf="work.name">{{ work.name }}</h1>
+            <p class="role" *ngIf="work.role">{{ work.role }}</p>
+            <p class="year" *ngIf="work.year">YEAR {{ work.year }}</p>
+        </div>
+    </div>
+</div>

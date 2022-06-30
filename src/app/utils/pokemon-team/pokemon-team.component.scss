@@ -25,13 +25,14 @@
             padding: 2rem;
             .carousel-cell {
                 .carousel-pokemon {
+                    position: relative;
                     background-color: $grey-1;
                     h1 {
                         font-size: 5rem;
-                        color: $grey-3;
+                        color: $grey-2;
                         position: absolute;
                         margin-top: 1rem;
-                        margin-left: 1rem;
+                        right: 1rem;
                     }
                     .cont-pokemon {
                         display: flex;
@@ -93,6 +94,12 @@
                                 }
                                 .type-fairy {
                                     background-color: #f0a9ef;
+                                }
+                                .type-grass {
+                                    background-color: #76c53c;
+                                }
+                                .type-dragon {
+                                    background-color: #5f50b3;
                                 }
                             }
                         }

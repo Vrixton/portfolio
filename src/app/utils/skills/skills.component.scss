@@ -1,0 +1,38 @@
+@import "/src/scss/base/colors";
+@import "/src/scss/base/text";
+
+.skills-cont {
+    .seccion-title {
+        background-color: $grey-1;
+        padding: 1rem 2rem;
+        h1 {
+            margin: 0;
+            color: $white;
+            font-weight: lighter;
+            font-size: 1.6rem;
+        }
+    }
+    .cont-skills {
+        background-color: $white;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div.skill {
+            width: 10rem;
+            height: 5rem;
+            margin-right: .1rem;
+            margin-bottom: .1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            img {
+                max-width: 80%;
+            }
+
+        }
+    }
+}
+
+
