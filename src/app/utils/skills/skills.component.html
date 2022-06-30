@@ -4,8 +4,8 @@
     </div>
     <div class="cont-skills">
         <div *ngFor="let skill of skills" class="skill {{ skill.color }}"> 
-            <!-- <img *ngIf="skill.url" [src]="skill.url" alt=""> -->
-            <span *ngIf="skill.name">{{ skill.name }}</span>
+            <img *ngIf="skill.url" [src]="skill.url" alt="">
+            <!-- <span *ngIf="skill.name">{{ skill.name }}</span> -->
         </div>
     </div>
 </div>

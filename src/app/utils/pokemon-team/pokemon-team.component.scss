@@ -13,7 +13,7 @@
         }
     }
     .cont-pokedex {
-        height: 20rem;
+        height: 25rem;
         background: repeating-linear-gradient(
             45deg,
             $white,
@@ -23,6 +23,7 @@
           );
           .cont-carousel {
             padding: 2rem;
+            padding-top: 5rem;
             .carousel-cell {
                 .carousel-pokemon {
                     position: relative;

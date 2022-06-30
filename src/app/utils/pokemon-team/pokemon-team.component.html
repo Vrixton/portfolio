@@ -4,7 +4,7 @@
     </div>
     <div class="cont-pokedex">
         <div class="cont-carousel">
-            <carousel [cellsToShow]="3" [height]="250" [loop]="true">
+            <carousel [cellsToShow]="3" [height]="250" [loop]="true" [minSwipeDistance]="0">
                 <div class="carousel-cell" *ngFor="let pokemon of pokemonTeam">
                     <div class="carousel-pokemon">
                         <h1 class="font-1">{{ pokemon.number }}</h1>

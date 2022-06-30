@@ -1,4 +1,6 @@
 @import "/src/scss/base/colors";
+@import "/src/scss/base/text";
+
 .about-links {
     margin-top: 1rem;
     width: 100%;
@@ -8,14 +10,30 @@
     .networks {
         display: flex;
         justify-content: start;
-        div.network {
+        a.network {
             cursor: pointer;
             width: 4rem;
-            margin-right: .7rem;
+            margin-right: .2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 2.5rem;
+            }
         }
     }
     .cv { 
         cursor: pointer;
-        width: 4rem;
+        width: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+        font-family: $font-2;
+        img {
+            width: 2.5rem;
+            margin-left: -.5rem;
+        }
     }
  }
