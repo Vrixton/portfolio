@@ -1,0 +1,15 @@
+<div class="cont-projects">
+    <div class="projects">
+        <div  *ngFor="let project of projects" class="project {{ project.color }}">
+            <a [href]="project.url" target="_blank">
+                <div class="cont-project" [ngStyle]="{'background-image': 'url(' + project.img + ')'}"> 
+                    <div class="bg-dark">
+                    </div>
+                    <div class="project-data {{ project.color }}">
+                        <h1 *ngIf="project.name"><span class="go-project">Go to <br></span>{{ project.name }}</h1>  
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

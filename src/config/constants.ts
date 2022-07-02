@@ -201,4 +201,79 @@ export class Constants {
       color: 'bg-secundary'
     }
   ]
+
+  public static PROJECTS = [
+    {
+      name: 'Farmatodo',
+      img: '../assets/projects/farmatodo.png',
+      url: 'http://farmatodo.com.co/',
+      color: 'bg-primary'
+    },
+    {
+      name: 'Agaval',
+      img: '../assets/projects/agaval.png',
+      url: 'https://www.agaval.com/',
+      color: 'bg-secundary'
+    },
+    {
+      name: 'Mario Hernandez',
+      img: '../assets/projects/mario-hernandez.png',
+      url: 'https://www.mariohernandez.com.co/sale-mh-2022',
+      color: 'bg-third'
+    },
+    {
+      name: 'Fuera de Serie',
+      img: '../assets/projects/fds.png',
+      url: 'https://www.fueradeserie.com.co/',
+      color: 'bg-primary'
+    },
+    {
+      name: 'Pro Champions',
+      img: '../assets/projects/prochampions.png',
+      url: 'https://www.prochampions.com/',
+      color: 'bg-secundary'
+    },
+    {
+      name: 'Fiotti',
+      img: '../assets/projects/fiotti.png',
+      url: 'https://www.fiotti.com.co/',
+      color: 'bg-third'
+    },
+    {
+      name: 'Carr Leasing',
+      img: '../assets/projects/carr-leasing.png',
+      url: 'https://demo-carrleasing.herokuapp.com/',
+      color: 'bg-primary'
+    },
+    {
+      name: 'SWE Fury',
+      img: '../assets/projects/swefury.png',
+      url: 'https://swefury-aa37d.web.app/',
+      color: 'bg-secundary'
+    },
+    {
+      name: 'SWE Fury - Admin',
+      img: '../assets/projects/swe-fury-admin.png',
+      url: 'https://swefury-admin.web.app/',
+      color: 'bg-third'
+    },
+    {
+      name: 'Aranza Isea Portfolio',
+      img: '../assets/projects/aranza.png',
+      url: 'https://drive.google.com/file/d/1rMiV8w5BxRW6CCjBLqQa-FKGVT0RGB31/view',
+      color: 'bg-primary'
+    },
+    {
+      name: 'TSSERAPP',
+      img: '../assets/projects/tsserapp.png',
+      url: '',
+      color: 'bg-secundary'
+    },
+    {
+      name: '',
+      img: '',
+      url: '',
+      color: 'bg-grey-1'
+    },
+  ]
 }

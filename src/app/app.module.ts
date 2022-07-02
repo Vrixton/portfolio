@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SkillsComponent } from './utils/skills/skills.component';
 import { WorkExperienceComponent } from './utils/work-experience/work-experience.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { WorkExperienceComponent } from './utils/work-experience/work-experience
     LinksComponent,
     SkillsComponent,
     WorkExperienceComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
