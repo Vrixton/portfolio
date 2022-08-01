@@ -19,4 +19,7 @@ export class HeaderComponent implements OnInit {
       this.menuStatus = false;
     }
   }
+  contactMe() {
+    window.open("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=victor.villavicencio.10@gmail.com");
+  }
 }

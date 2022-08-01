@@ -24,6 +24,9 @@
           .cont-carousel {
             padding: 2rem;
             padding-top: 5rem;
+            carousel.carousel {
+                z-index: 1;
+            }
             .carousel-cell {
                 .carousel-pokemon {
                     position: relative;
@@ -109,7 +112,18 @@
             }
 
         }
-        
+        .cont-carousel.carousel-desktop {
+            display: block;
+            @media screen and (max-width: 600px) { 
+                display: none;
+            }
+        }
+        .cont-carousel.carousel-mobile {
+            display: none;
+            @media screen and (max-width: 600px) { 
+                display: block;
+            }
+        }
     }
 }
 

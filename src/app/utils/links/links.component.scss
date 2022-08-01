@@ -19,7 +19,12 @@
             align-items: center;
             img {
                 width: 2.5rem;
+                transition: .3s;
+                &:hover {
+                    width: 2.8rem;
+                }
             }
+
         }
     }
     .cv { 

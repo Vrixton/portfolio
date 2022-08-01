@@ -274,6 +274,6 @@ export class Constants {
       img: '',
       url: '',
       color: 'bg-grey-1'
-    },
+    }
   ]
 }

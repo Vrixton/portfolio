@@ -3,8 +3,27 @@
         <h1 class="font-2 ">POKEMON TEAM</h1>
     </div>
     <div class="cont-pokedex">
-        <div class="cont-carousel">
+        <div class="cont-carousel carousel-desktop">
             <carousel [cellsToShow]="3" [height]="250" [loop]="true" [minSwipeDistance]="0">
+                <div class="carousel-cell" *ngFor="let pokemon of pokemonTeam">
+                    <div class="carousel-pokemon">
+                        <h1 class="font-1">{{ pokemon.number }}</h1>
+                        <div class="cont-pokemon">
+                            <img [src]="pokemon.sprite"  alt="">
+                            <div class="pokemon-data">
+                                <p>{{ pokemon.name }}</p>
+                                <div class="types" >
+                                    <p *ngFor="let type of pokemon.types" class="type type-{{type}}">{{ type }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </carousel>
+        </div>
+
+        <div class="cont-carousel carousel-mobile">
+            <carousel [cellsToShow]="1" [height]="250" [loop]="true" [minSwipeDistance]="0">
                 <div class="carousel-cell" *ngFor="let pokemon of pokemonTeam">
                     <div class="carousel-pokemon">
                         <h1 class="font-1">{{ pokemon.number }}</h1>

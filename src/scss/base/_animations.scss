@@ -40,3 +40,11 @@
         margin-left: 0;
     }
 }
+@keyframes arrow-project-anim  {
+    0%   {
+        margin-left: .6rem;
+    }
+    100%  {
+        margin-left: .3rem;
+    }
+}
